@@ -35,15 +35,8 @@ const SwatchLabel = styled.div(({ theme }) => ({
       ? transparentize(0.4, theme.color.defaultText)
       : transparentize(0.6, theme.color.defaultText),
 
-  '> div': {
-    display: 'inline-block',
-    overflow: 'hidden',
-    maxWidth: '100%',
-  },
-
-  span: {
+  small: {
     display: 'block',
-    marginTop: 2,
   },
 }));
 
@@ -135,10 +128,8 @@ function renderSwatch(color: string) {
 function renderSwatchLabel(color: string, colorDescription?: string) {
   return (
     <SwatchLabel key={color} title={color}>
-      <div>
-        {color}
-        {colorDescription && <span>{colorDescription}</span>}
-      </div>
+      {color}
+      {colorDescription && <small>{colorDescription}</small>}
     </SwatchLabel>
   );
 }
