@@ -37,7 +37,7 @@
   "dependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
-    "@storybook/codemod": "6.0.0-alpha.3",
+    "@storybook/codemod": "6.0.26",
     "chalk": "^3.0.0",
     "commander": "^4.0.1",
     "core-js": "^3.0.1",
